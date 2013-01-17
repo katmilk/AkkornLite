@@ -1,0 +1,9 @@
+site:
+    title: "样品SOHO"
+    structure:
+        sales: "销售／出租"
+    external:
+        sales: "http://www.sohochinasale.com"
+    css:
+        1: "css/theme-sample.css"
+    logo: ""

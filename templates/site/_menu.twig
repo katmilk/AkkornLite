@@ -1,0 +1,20 @@
+<div id="main-header">
+	<div class="inner">
+		<h1><a href="{{ path('page', {'page': 'homepage', 'locale': app.locale})}}" title="{{ app.site.title }}">{{ app.site.title }}</a></h1>
+		<ul id="main-nav">
+			{% for url, title in app.site.structure %}
+			<li class="{% if loop.index == 1 %}first{% endif %}
+			{% if url in app.site.external|keys %} external{% endif %}">
+
+			{% if url in app.site.external|keys %} 
+				<a href="{{ app.site.external[url] }}" title="{{ title }}"	target="_blank"><span>{{ title }} </span></a>
+			{% else  %}
+				<a {% if app.current_url == url %}class="current"{% endif %} href="{{ path('page', {'page': url, 'locale': app.locale})}}" title="{{ title }}">
+					<span>{{ title }}</span>
+				</a>
+			{% endif %}
+			</li>
+			{% endfor %}
+		</ul>
+	</div>
+</div>

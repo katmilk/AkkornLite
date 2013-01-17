@@ -1,0 +1,110 @@
+{% if module.layout is not defined  %}
+{% set i = 1 %}
+<div class="mod-inner">
+	{% if module.title is defined or module.reference is defined %}
+		<div class="inner-content inner-header clearfix">
+			{% if module.title is defined %}
+				<h2>{{module.title|raw}}</h2>
+			{% endif %}
+			{% if module.link is defined %}
+				{{module.link|raw}}
+			{% endif %}
+		</div>
+	{% endif %}
+	{% for column in module.columns %}
+		{% if i == 1 %}
+		<div class="inner-content col-3 first">
+		{% endif %}
+		{% if i == module.columns|length %}
+		<div class="inner-content col-3 last">
+		{% endif %}
+		{% if i != module.columns|length and i != 1 %}
+		<div class="inner-content col-3">
+		{% endif %}
+			{% if column.img is defined %}
+				<div class="img-container">
+					{% if column.url is defined %}
+					<a href="{{column.url}}">
+					{% endif %}
+						<img src="{{column.img}}">
+					{% if column.url is defined %}
+					</a>
+					{% endif %}
+				</div>
+			{% endif %}
+			<div class="copy-container">
+				{% if column.title is defined %}
+					{% if column.url is defined %}
+					<a href="{{column.url}}">
+					{% endif %}
+						<h2>{{column.title|raw}}</h2>
+					{% if column.url is defined %}
+					</a>
+					{% endif %}
+				{% endif %}
+				{% if column.subtitle is defined %}
+					<h3>{{column.subtitle|raw}}</h3>
+				{% endif %}
+				{% if column.text is defined %}
+					{{column.text|raw}}
+				{% endif %}
+			</div>
+			{% if "mod-hover" in module.class and module.class is defined %}
+				<div class="hover-container"></div>
+			{% endif %}
+		</div>
+	{% set i = i + 1 %}
+	{% endfor %}
+</div>
+{% endif %}
+
+{# Variant layout where the caption is above the title #}
+{% if module.layout is defined and module.layout == "1" %}
+<div class="mod-inner">
+	{% if module.title is defined or module.reference is defined %}
+		<div class="inner-content inner-header clearfix">
+			{% if module.title is defined %}
+				<h2>{{module.title|raw}}</h2>
+			{% endif %}
+			{% if module.reference is defined %}
+				<a href="{{module.reference.url}}">{{module.reference}}</a>
+			{% endif %}
+		</div>
+	{% endif %}
+	{% for column in module.columns %}
+		<div class="inner-content col-3">
+			{% if column.img is defined %}
+				<div class="img-container">
+					{% if column.url is defined %}
+					<a href="{{column.url}}">
+					{% endif %}
+						<img src="{{column.img}}">
+					{% if column.url is defined %}
+					</a>
+					{% endif %}
+				</div>
+			{% endif %}
+			<div class="copy-container">
+				{% if column.text is defined %}
+					{{column.text|raw}}
+				{% endif %}
+				{% if column.title is defined %}
+					{% if column.url is defined %}
+					<a href="{{column.url}}">
+					{% endif %}
+						<h2>{{column.title|raw}}</h2>
+					{% if column.url is defined %}
+					</a>
+					{% endif %}
+				{% endif %}
+				{% if column.subtitle is defined %}
+					<h3>{{column.subtitle|raw}}</h3>
+				{% endif %}
+			</div>
+			{% if "mod-hover" in module.class and module.class is defined %}
+				<div class="hover-container"></div>
+			{% endif %}
+		</div>
+	{% endfor %}
+</div>
+{% endif %}

@@ -1,0 +1,55 @@
+{% if module.layout is not defined  %}
+<div class="mod-inner">
+	<div class="copy-container">
+		{% if module.title is defined %}
+			<h2>{{ module.title }}</h2>
+		{% endif %}
+
+		{% if module.subtitle is defined %}
+			<h3>{{ module.subtitle }}</h3>
+		{% endif %}
+
+		{% if module.text is defined %}
+			{{ module.text|raw }}
+		{% endif %}
+
+		{% if module.columns is defined %}
+			<ul>
+			{% for column in module.columns %}
+				{% if column.text is defined %}
+					<li>{{column.text|raw}}</li>
+				{% endif %}
+			{% endfor %}
+			</ul>
+		{% endif %}
+	</div>
+</div>
+{% endif %}
+
+{# Variant layout where the caption is above the title #}
+{% if module.layout is defined and module.layout == "1" %}
+<div class="mod-inner">
+	<div class="copy-container">
+		{% if module.subtitle is defined %}
+			<h3>{{ module.subtitle|raw }}</h3>
+		{% endif %}
+		{% if module.title is defined %}
+			<h2>{{ module.title|raw }}</h2>
+		{% endif %}
+
+		{% if module.text is defined %}
+			{{ module.text|raw }}
+		{% endif %}
+
+		{% if module.columns is defined %}
+			<ul>
+			{% for column in module.columns %}
+				{% if column.text is defined %}
+					<li>{{column.text|raw}}</li>
+				{% endif %}
+			{% endfor %}
+			</ul>
+		{% endif %}
+	</div>
+</div>
+{% endif %}

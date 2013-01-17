@@ -1,0 +1,22 @@
+<div class="mod-inner">
+	{% for column in module.columns %}
+	<div class="inner-content col-2">
+		{% if column.img is defined %}
+			<div class="img-container">
+				<img src="{{column.img}}">
+			</div>
+		{% endif %}
+		<div class="copy-container">
+			{% if column.title is defined %}
+				<h2>{{column.title}}</h2>
+			{% endif %}
+			{% if column.subtitle is defined %}
+				<h3>{{column.subtitle}}</h3>
+			{% endif %}
+			{% if column.text is defined %}
+				{{column.text|raw}}
+			{% endif %}
+		</div>
+	</div>
+	{% endfor %}
+</div>

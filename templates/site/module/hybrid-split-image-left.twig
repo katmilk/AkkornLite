@@ -1,0 +1,54 @@
+{% if module.layout is not defined  %}
+<div class="mod-inner">
+	{% if module.img is defined %}
+		<div class="img-container pull-left">
+			<img src="{{module.img}}">
+		</div>
+	{% endif %}
+	<div class="copy-container">
+		{% if module.title is defined %}
+			<h2>{{module.title|raw}}</h2>
+		{% endif %}
+		{% if module.subtitle is defined %}
+			<h3>{{module.subtitle|raw}}</h3>
+		{% endif %}
+		{% if module.text is defined %}
+			{{module.text|raw}}
+		{% endif %}
+		{% if module.reference is defined %}
+			<span>{{module.reference}}</span>
+		{% endif %}
+		{% if module.button is defined %}
+			{{module.button|raw}}
+		{% endif %}
+	</div>
+</div>
+{% endif %}
+
+{# Variant layout where the subtitle is above the title #}
+{% if module.layout is defined and module.layout == "1" %}
+<div class="mod-inner">
+	{% if module.img is defined %}
+		<div class="img-container pull-left">
+			<img src="{{module.img}}">
+		</div>
+	{% endif %}
+	<div class="copy-container">
+		{% if module.subtitle is defined %}
+			<h3>{{module.subtitle|raw}}</h3>
+		{% endif %}
+		{% if module.title is defined %}
+			<h2>{{module.title|raw}}</h2>
+		{% endif %}
+		{% if module.text is defined %}
+			{{module.text|raw}}
+		{% endif %}
+		{% if module.reference is defined %}
+			<span>{{module.reference}}</span>
+		{% endif %}
+		{% if module.button is defined %}
+			{{module.button|raw}}
+		{% endif %}
+	</div>
+</div>
+{% endif %}

@@ -1,0 +1,10 @@
+<div class="mod-inner">
+	<blockquote>
+		{% if module.text is defined %}
+			{{ module.text|raw }}
+		{% endif %}
+		{% if module.source is defined %}
+			<span>&mdash; {{ module.source }}</span>
+		{% endif %}
+	</blockquote>
+</div>

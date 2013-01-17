@@ -1,0 +1,54 @@
+<div class="btn-container">
+	<div class="btns">
+		<ul>
+			{% set j = 1 %}
+			{% for btn in module.btns %}
+				{% if j == 1 %}
+					<li data-tab="{{j}}" class="first active">{{btn.label}}<div class="caret"></div></li>
+				{% endif %}
+				{% if j == module.btns|length %}
+					<li data-tab="{{j}}" class="last">{{btn.label}}<div class="caret"></div></li>
+				{% endif %}
+				{% if j != module.btns|length and j != 1 %}
+					<li data-tab="{{j}}">{{btn.label}}<div class="caret"></div></li>
+				{% endif %}
+				{% set j = j + 1 %}
+			{% endfor %}
+		</ul>
+	</div>
+</div>
+<div class="mod-inner">
+	<div class="tab-content">
+		{% set i = 1 %}
+		{% for tab in module.tabs %}
+			{% if i == 1 %}
+				<div class="tab active clearfix" data-index="{{i}}">
+			{% endif %}
+			{% if i != 1 %}
+				<div class="tab clearfix" data-index="{{i}}">
+			{% endif %}
+			{% for column in tab.columns %}
+				<div class="inner-content col-3">
+					{% if column.img is defined %}
+						<div class="img-container">
+							<img src="{{column.img}}">
+						</div>
+					{% endif %}
+					<div class="copy-container">
+						{% if column.title is defined %}
+							<h2>{{column.title}}</h2>
+						{% endif %}
+						{% if column.subtitle is defined %}
+							<h3>{{column.subtitle}}</h3>
+						{% endif %}
+						{% if column.text is defined %}
+							{{column.text|raw}}
+						{% endif %}
+					</div>
+				</div>
+			{% endfor %}
+			</div>
+		{% set i = i + 1 %}
+		{% endfor %}
+	</div>
+</div>

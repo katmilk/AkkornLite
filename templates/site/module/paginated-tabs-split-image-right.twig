@@ -1,0 +1,53 @@
+<div class="btn-container">
+	<div class="btns">
+		<ul>
+			{% set j = 1 %}
+			{% for btn in module.btns %}
+				{% if j == 1 %}
+					<li data-tab="{{j}}" class="first active">{{btn.label}}<div class="caret"></div></li>
+				{% endif %}
+				{% if j == module.btns|length %}
+					<li data-tab="{{j}}" class="last">{{btn.label}}<div class="caret"></div></li>
+				{% endif %}
+				{% if j != module.btns|length and j != 1 %}
+					<li data-tab="{{j}}">{{btn.label}}<div class="caret"></div></li>
+				{% endif %}
+				{% set j = j + 1 %}
+			{% endfor %}
+		</ul>
+	</div>
+</div>
+<div class="mod-inner">
+	<div class="tab-content">
+		{% set i = 1 %}
+		{% for tab in module.tabs %}
+			{% if i == 1 %}
+				<div class="tab active clearfix" data-index="{{i}}">
+			{% endif %}
+			{% if i != 1 %}
+				<div class="tab clearfix" data-index="{{i}}">
+			{% endif %}
+			{% if tab.img is defined %}
+				<div class="img-container pull-right">
+					<img src="{{tab.img}}">
+				</div>
+			{% endif %}
+				<div class="copy-container">
+					{% if tab.title is defined %}
+						<h2>{{tab.title}}</h2>
+					{% endif %}
+					{% if tab.subtitle is defined %}
+						<h3>{{tab.subtitle}}</h3>
+					{% endif %}
+					{% if tab.text is defined %}
+						{{tab.text|raw}}
+					{% endif %}
+					{% if tab.button is defined %}
+						{{tab.button|raw}}
+					{% endif %}
+				</div>
+			</div>
+		{% set i = i + 1 %}
+		{% endfor %}
+	</div>
+</div>

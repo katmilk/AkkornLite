@@ -1,0 +1,250 @@
+/* Galaxy Soho Property Styles
+ *
+ */
+/* Sprite for Icons */
+/* Sprite for Buttons Items */
+/* Sprite for Utility Items */
+.utility-sprite, .utility-arrow-down-darkbg, .utility-arrow-left-darkbg, .utility-arrow-up, .utility-arrow_down_grey_7, .utility-arrow_left_grey_4, .utility-arrow_right_grey_4, .utility-commune-paginate-left, .utility-commune-paginate-right, .utility-datepicker, .utility-fancybox_overlay, .utility-sb-close, .utility-sb-left, .utility-sb-right, .utility-slider_next_135, .utility-slider_next_25, .utility-slider_next_26, .utility-slider_next_new, .utility-slider_prev_135, .utility-slider_prev_25, .utility-slider_prev_26, .utility-slider_prev_new {
+  background: url('/assets/img/utility-sc60ba88df0.png') no-repeat;
+}
+
+.utility-arrow-down-darkbg {
+  background-position: 0 -1548px;
+}
+
+.utility-arrow-left-darkbg {
+  background-position: 0 -1541px;
+}
+
+.utility-arrow-up {
+  background-position: 0 -1530px;
+}
+
+.utility-arrow_down_grey_7 {
+  background-position: 0 -1552px;
+}
+
+.utility-arrow_left_grey_4 {
+  background-position: 0 -1534px;
+}
+
+.utility-arrow_right_grey_4 {
+  background-position: 0 -1556px;
+}
+
+.utility-commune-paginate-left {
+  background-position: 0 -1300px;
+}
+
+.utility-commune-paginate-right {
+  background-position: 0 -1260px;
+}
+
+.utility-datepicker {
+  background-position: 0 -1514px;
+}
+
+.utility-fancybox_overlay {
+  background-position: 0 -1563px;
+}
+
+.utility-sb-close {
+  background-position: 0 -980px;
+}
+
+.utility-sb-left {
+  background-position: 0 -1020px;
+}
+
+.utility-sb-right {
+  background-position: 0 -1060px;
+}
+
+.utility-slider_next_135 {
+  background-position: 0 -490px;
+}
+
+.utility-slider_next_25 {
+  background-position: 0 -1469px;
+}
+
+.utility-slider_next_26 {
+  background-position: 0 -1180px;
+}
+
+.utility-slider_next_new {
+  background-position: 0 -1340px;
+}
+
+.utility-slider_prev_135 {
+  background-position: 0 0;
+}
+
+.utility-slider_prev_25 {
+  background-position: 0 -1382px;
+}
+
+.utility-slider_prev_26 {
+  background-position: 0 -1100px;
+}
+
+.utility-slider_prev_new {
+  background-position: 0 -1427px;
+}
+
+/* Theme Variables
+ * --------------------------------------------------------- */
+/* BG images */
+/* Galaxy colors */
+/* Fonts */
+/* Theme Typography / Colors
+ * --------------------------------------------------------- */
+body {
+  background: whitesmoke;
+  color: #888888;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: lighter;
+}
+
+h1, h2, h1 a, h2 a {
+  color: #b2baba;
+}
+
+h3, h3 a, h4, h4 a {
+  color: #555555;
+}
+
+a, a:visited {
+  color: #b2baba;
+}
+
+a:hover {
+  color: #555555;
+}
+
+#global-header {
+  background: #f0f0f0;
+}
+
+#utility-nav li {
+  border-right: 1px solid #d6d6d6;
+}
+#utility-nav li a.corp-home {
+  color: #fff;
+  padding: 5px 15px;
+  border-top: 1px solid #616161;
+  border-bottom: 1px solid #202020;
+  background: #474747;
+  background: -webkit-gradient(linear, 0 0, 0 bottom, from(#474747), to(#393939));
+  background: -webkit-linear-gradient(#474747, #393939);
+  background: -moz-linear-gradient(#474747, #393939);
+  background: -ms-linear-gradient(#474747, #393939);
+  background: -o-linear-gradient(#474747, #393939);
+  background: linear-gradient(#474747, #393939);
+  -pie-background: linear-gradient(#474747, #393939);
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+  -pie-lazy-init: false;
+  behavior: url(/assets/css/PIE.htc);
+}
+#utility-nav li a.corp-home:hover {
+  border-top: 1px solid #474747;
+  border-bottom: 1px solid #131313;
+  text-decoration: none;
+  background: #2e2e2e;
+  background: -webkit-gradient(linear, 0 0, 0 bottom, from(#2e2e2e), to(#202020));
+  background: -webkit-linear-gradient(#2e2e2e, #202020);
+  background: -moz-linear-gradient(#2e2e2e, #202020);
+  background: -ms-linear-gradient(#2e2e2e, #202020);
+  background: -o-linear-gradient(#2e2e2e, #202020);
+  background: linear-gradient(#2e2e2e, #202020);
+  -pie-background: linear-gradient(#2e2e2e, #202020);
+  -pie-lazy-init: false;
+  behavior: url(/assets/css/PIE.htc);
+}
+
+/* Main Header
+ * --------------------------------------------------------- */
+#main-header {
+  background: url(../property/sample/img/sample_nav.png) no-repeat center center;
+  height: 85px;
+  width: 100%;
+  position: absolute;
+  top: 20px;
+  left: 0;
+}
+#main-header h1 {
+  margin: 25px 0 0 20px;
+}
+#main-header h1 a {
+  background: url(../property/sample/img/sample_logo.png) no-repeat 0 0;
+  height: 30px;
+  width: 132px;
+}
+
+/* Main Nav */
+#main-nav li a {
+  border-right: 1px solid #3a3a3a;
+  color: #e8e8e8;
+}
+#main-nav li a.current, #main-nav li a:hover {
+  border: none;
+  background: #010101;
+  text-decoration: none;
+  padding: 20px 21px 20px 21px;
+  position: relative;
+  left: -1px;
+  background: #141414;
+  background: -webkit-gradient(linear, 0 0, 0 bottom, from(#141414), to(#363636));
+  background: -webkit-linear-gradient(#141414, #363636);
+  background: -moz-linear-gradient(#141414, #363636);
+  background: -ms-linear-gradient(#141414, #363636);
+  background: -o-linear-gradient(#141414, #363636);
+  background: linear-gradient(#141414, #363636);
+  -pie-background: linear-gradient(#141414, #363636);
+  -pie-lazy-init: false;
+  behavior: url(/assets/css/PIE.htc);
+}
+#main-nav li.external a {
+  border-right: none;
+  padding: 5px 0 5px 20px;
+}
+#main-nav li.external a:hover {
+  padding-left: 21px;
+}
+#main-nav li.external a:hover span {
+  border-top: 1px solid #474747;
+  border-bottom: 1px solid #131313;
+  background: #2e2e2e;
+  background: -webkit-gradient(linear, 0 0, 0 bottom, from(#2e2e2e), to(#202020));
+  background: -webkit-linear-gradient(#2e2e2e, #202020);
+  background: -moz-linear-gradient(#2e2e2e, #202020);
+  background: -ms-linear-gradient(#2e2e2e, #202020);
+  background: -o-linear-gradient(#2e2e2e, #202020);
+  background: linear-gradient(#2e2e2e, #202020);
+  -pie-background: linear-gradient(#2e2e2e, #202020);
+  -pie-lazy-init: false;
+  behavior: url(/assets/css/PIE.htc);
+}
+#main-nav li.external a span {
+  border-top: 1px solid #616161;
+  border-bottom: 1px solid #202020;
+  background: #474747;
+  background: -webkit-gradient(linear, 0 0, 0 bottom, from(#474747), to(#393939));
+  background: -webkit-linear-gradient(#474747, #393939);
+  background: -moz-linear-gradient(#474747, #393939);
+  background: -ms-linear-gradient(#474747, #393939);
+  background: -o-linear-gradient(#474747, #393939);
+  background: linear-gradient(#474747, #393939);
+  -pie-background: linear-gradient(#474747, #393939);
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+  -pie-lazy-init: false;
+  behavior: url(/assets/css/PIE.htc);
+}

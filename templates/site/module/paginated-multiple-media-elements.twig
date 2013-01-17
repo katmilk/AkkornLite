@@ -1,0 +1,101 @@
+<div class="btn-container">
+	<div class="btns">
+		<ul>
+			{% set j = 1 %}
+			{% for btn in module.btns %}
+			{% if j == 1 %}
+				<li data-tab="{{j}}" class="first active"><span>{{btn.title}}</span></li>
+			{% endif %}
+			{% if j != 1 %}
+				<li data-tab="{{j}}"><span>{{btn.title}}</span></li>
+			{% endif %}
+			{% set j = j + 1 %}	
+			{% endfor %}
+		</ul>
+	</div>
+</div>
+	<div class="mod-inner">
+		<div class="tab-content">
+		{% set i = 1 %}
+		{% for tab in module.tabs %}
+				{% if i == 1 %}
+					<div class="tab active clearfix" data-index="{{i}}">
+				{% endif %}
+				{% if i != 1 %}
+					<div class="tab clearfix" data-index="{{i}}">
+				{% endif %}
+				{% if tab.slides is defined %}
+					<div class="slideshow-content">
+						<div class="slideshow-container">
+							<ul class="slider">
+					    		{% set k = 1 %}
+								{% for slide in tab.slides %}
+								<li class="slide">
+									<img src="{{ slide.img }}">
+									{% if slide.caption is defined %}
+									<div class="detail">
+										<div class="detail-inner">
+											<div class="caption">
+												<p>{{ slide.caption|raw }}</p>
+											</div>
+										</div>
+									</div>
+									{% endif %}
+								</li>
+								{% set k = k + 1 %}	
+								{% endfor %}
+							</ul>
+							<div class="slider-nav">
+								<a class="slider-prev" href=""><span>Previous</span></a>
+								<a class="slider-next" href=""><span>Next</span></a>
+							</div>
+							<div class="slider-controls">
+								<div class="slider-pagin"></div>
+							</div>
+						</div>
+					</div>
+				{%else%}
+					{% if tab.img is defined %}
+					<div class="img-wrap">
+						<img src="{{ tab.img }}" alt="{{ tab.title }}">
+					</div>
+					{% endif %}
+					{% if tab.caption is defined %}
+					<div class="caption">
+						<p>{{ tab.caption|raw }}</p>
+					</div>
+					{% endif %}
+				{% endif %}
+				{% if tab.text is defined %}
+					<div class="copy-container clearfix" >
+						<div class="text">
+							{% if tab.title is defined %}
+							<h2>{{ tab.title }}</h2>
+							{%endif%}
+							{% if tab.description is defined %}
+							<h3>{{ tab.description|raw }}</h3>
+							{%endif%}
+						</div>
+						<div class="copy">
+						{{ tab.text | raw}}
+						</div>
+						{% if tab.button is defined %}
+						<div>
+							<a class="btn" href="{{tab.url}}"><span>{{tab.button}}</span></a>
+						</div>
+						{%endif%}
+					</div>
+				{% else %}
+					{% if tab.title is defined %}
+						<h2>{{ tab.title }}</h2>
+					{% endif %}
+					{% if tab.caption is defined %}
+						{{ tab.caption|raw}}
+					{% endif %}
+				{% endif %}
+			</div>
+		{% set i = i + 1 %}	
+		{% endfor %}
+		</div>
+	</div>
+</div>

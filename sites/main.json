@@ -1,0 +1,136 @@
+{
+	"config": {
+		"project": {
+			"sample.akkornlite.com"							: "sample"
+		},
+		"urls": {
+
+		},
+		"inactive_urls": {
+		
+		},
+		"module": {
+			"t.t" : {
+				"template": "text-title",
+				"class": "module text-title",
+				"title": "Text Title"
+			},
+			"t.s" : {
+				"template": "text-subtitle",
+				"class": "module text-subtitle",
+				"title": "Text Subtitle"
+			},
+			"t.b" : {
+				"template": "text-body",
+				"class": "module text-body",
+				"title": "Text Subtitle"
+			},
+			"t.q" : {
+				"template": "text-quote",
+				"class": "module text-quote",
+				"title": "Text Quote"
+			},
+			"t.d" : {
+				"template": "text-divider",
+				"class": "module text-divider",
+				"title": "Text Divider"
+			},
+			"h.sr" : {
+				"template": "hybrid-split-image-right",
+				"class": "module hybrid-split-image-right",
+				"title": "Hybrid - Split Image Right"
+			},
+			"h.sl" : {
+				"template": "hybrid-split-image-left",
+				"class": "module hybrid-split-image-left",
+				"title": "Hybrid - Split Image Left"
+			},
+			"h.2s" : {
+				"template": "hybrid-2-column-split",
+				"class": "module hybrid-2-column-split",
+				"title": "Hybrid - 2 Column Split"
+			},
+			"h.2" : {
+				"template": "hybrid-2-column",
+				"class": "module hybrid-2-column",
+				"title": "Hybrid - 2 Column"
+			},
+			"h.3" : {
+				"template": "hybrid-3-column",
+				"class": "module hybrid-3-column",
+				"title": "Hybrid - 3 Column"
+			},
+			"h.4" : {
+				"template": "hybrid-4-column",
+				"class": "module hybrid-4-column",
+				"title": "Hybrid - 4 Column"
+			},
+			"h.3l" : {
+				"template": "hybrid-3-column-mixed-left",
+				"class": "module hybrid-3-column-mixed-left",
+				"title": "Hybrid - 3 Column Mixed Left"
+			},
+			"h.3r" : {
+				"template": "hybrid-3-column-mixed-right",
+				"class": "module hybrid-3-column-mixed-right",
+				"title": "Hybrid - 3 Column Mixed Right"
+			},
+			"m.s" : {
+				"template": "media-single-element",
+				"class": "module media-single-element",
+				"title": "Media - Single Element"
+			},
+			"m.m" : {
+				"template": "media-multiple-elements",
+				"class": "module media-multiple-elements",
+				"title": "Media - Multiple Elements"
+			},
+			"m.g" : {
+				"template": "media-gallery-with-filters",
+				"class": "module media-gallery-with-filters",
+				"title": "Media - Gallery with Filters"
+			},
+			"p.2" : {
+				"template": "paginated-2-column",
+				"class": "module paginated-2-column",
+				"title": "Paginated - 2 Column"
+			},
+			"p.m" : {
+				"template": "paginated-multiple-media-elements",
+				"class": "module paginated-multiple-media-elements",
+				"title": "Paginated - Multiple Media Elements"
+			},
+			"p.4" : {
+				"template": "paginated-4-column-feed",
+				"class": "module paginated-4-column-feed",
+				"title": "Paginated - 4 Column Feed"
+			},
+			"p.t3" : {
+				"template" : "paginated-tabs-3-column",
+				"class" : "module paginated-tabs-3-column",
+				"title" : "Paginated - Tabs - 3 Column"
+			},
+			"p.tl" : {
+				"template" : "paginated-tabs-split-image-left",
+				"class" : "module paginated-tabs-split-image-left",
+				"title" : "Paginated - Tabs - Split Image Left"
+			},
+			"p.tr" : {
+				"template" : "paginated-tabs-split-image-right",
+				"class" : "module paginated-tabs-split-image-right",
+				"title" : "Paginated - Tabs - Split Image Right"
+			},
+			"p.tm" : {
+				"template" : "paginated-tabs-multimedia",
+				"class" : "module paginated-tabs-multimedia",
+				"title" : "Paginated - Tabs - Multimedia"
+			},
+			"c.b" : {
+				"template": "commune-reservataion-booker",
+				"class": "module utility-reservataion-booker",
+				"title": "Commune - Reservation Booker"
+			}
+		}
+	}
+
+}

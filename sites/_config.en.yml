@@ -1,0 +1,9 @@
+site:
+    title: "Sample SOHO"
+    structure:
+        sales: "Sales & Leasing"
+    external:
+        sales: "http://www.sohochinasale.com"
+    css:
+        1: "css/theme-sample.css"
+    logo: ""

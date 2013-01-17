@@ -1,0 +1,25 @@
+<div class="mod-inner">
+	{% if module.title is defined %}
+		<h2>{{module.title}}</h2>
+	{% endif %}
+	{% if module.filters is defined %}
+	<div class="mod-filters clearfix">
+		{% if module.filterName is defined %}
+			<span>{{module.filterName}}</span>
+		{% endif %}
+		<ul>
+			{% for item in module.filters %}
+				<li><input type="checkbox" data-filter="{{item.title}}" checked /><label>{{item.title}}</label></li>
+			{% endfor %}
+		</ul>
+	</div>
+	{% endif %}
+	<div class="gallery-holder clearfix">
+		<ul class="clearfix">
+			{% for image in module.images %}
+				<li data-filter="{{image.filter}}">
+					<a {% if image.img.url %}target="_blank"{% else %}class="fancybox"{% endif %} {% if image.img.url %}href="{{ image.img.url }}"{% else %}href="{{ image.img.full }}"{% endif %} rel="group" title="{{image.title}}" data-caption="{% if image.caption is defined %}{{image.caption}}{% endif %}"><div class="img-container"><img src="{{image.img.thumb}}" alt="" /></div><span>{{image.title|raw}}</span></a></li>
+			{% endfor %}
+		</ul>
+	</div>
+</div>

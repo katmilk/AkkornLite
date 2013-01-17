@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie10 lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie10 lt-ie9 " lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js lt-ie10" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <title>{% if app.page.title %}{{app.page.title}} - {% endif %} {{app.site.title}} - {% if app.locale == 'en' %}SOHO China{% else %}SOHO中国{% endif %}
+    </title>
+    <link href="/assets/css/main.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="/assets/css/jquery-ui.css" />
+    {% for css in app.site.css %}
+        <link rel="stylesheet" href="/assets/{{ css }}" />
+    {% endfor %}
+</head>
+<body>
+    <div class="site-{{ app.project }} {% if app.page.css_class is defined %}{{ app.page.css_class }} {% endif %}">
+        <div id="global-header">
+            <div class="header-wrap">
+                <div class="inner">
+                    <ul id="utility-nav">
+                        {% if app.locale == 'en' %}
+                        <li><a class="corp-home" href="http://www.sohochina.com" target="_blank" title="Visit SOHO China Official Corporate Site">Visit SOHO China Official Corporate Site</a></li>
+                        {% else %}
+                        <li><a class="corp-home" href="http://www.sohochina.com" target="_blank" title="点击进入SOHO中国官网">点击进入SOHO中国官网</a></li>
+                        {% endif %}
+                        <li>
+                            {% if app.locale == 'en' %}
+                            <a class="down-link sub-menu property-list" href="#" title="SOHO CHINA Properties">SOHO CHINA Properties</a>
+                            {% else %}
+                            <a class="down-link sub-menu property-list" href="#" title="SOHO中国项目">SOHO中国项目</a>
+                            {% endif %}
+                            <div class="dropdown offscreen">
+                                <ul>
+                                    {% for url, name in app.config.urls %}
+                                        <li {% if app.project == name['key']%}class="active-site"{% endif %}><a href="{{ url }}" title="{{ name[app.locale] }}" target="_blank">
+                                            <div class="img-wrap"><img src="/assets/img/property/{{ name['key'] }}.jpg"></div>
+                                            <span>{{ name[app.locale] }}</span>
+                                        </a></li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        </li>
+                        {% if app.project != 'sky' and app.project != 'century_plaza' and app.project != 'chaowai' and app.project != 'qianmen_avenue' and app.project != 'peaks' and app.project != 'jianwai' and app.project != 'the_exchange' and app.project != 'zhongshan_plaza' and app.project != 'chaoyangmen' and app.project != 'new_town' %}
+                        <li class="lang"><a {% if app.locale == 'en' %} class="current" {% endif %} href="/en" title="English">English</a></li>
+                        <li class="lang last"><a {% if app.locale == 'zh' %} class="current" {% endif %} href="/" title="中文">中文</a></li>
+                        {% endif %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        {% block menu %}  {% include('site/_menu.twig') %} {% endblock %}
+
+        <div id="main-content">
+            {% block content %}{% endblock %}
+        </div>
+
+        <div id="global-footer">
+            <div class="inner clearfix">
+                <div id="logo">
+                    <img src="/assets/img/misc/soho_china_logo.png" >
+                </div>
+                <div id="footer-nav">
+                    <ul>
+                        {% if app.locale == 'en' %}
+                        <li class="last"><a class="scroll-top" href="#global-header" title="Back to Top">back to top</a></li>
+                        {% else %}
+                        <li class="last"><a class="scroll-top" href="#global-header" title="返回页首">返回页首</a></li>
+                        {% endif %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="legal-footer">
+            <div class="inner clearfix">
+            {% if app.locale == 'en' %}
+            <p>&copy; 2012 SOHO China All Rights Reserved. 京ICP备05014360号</p>
+            {% else %}
+            <p>&copy; 2012 SOHO中国版权所有。 京ICP备05014360号</p>
+            {% endif %}
+            </div>
+        </div>
+    </div>
+    <!-- JavaScript at the bottom for fast page loading -->
+    <script src="{{ app.request.basepath }}/assets/js/libs/jquery-1.8.2.min.js"></script>
+    <script src="{{ app.request.basepath }}/assets/js/libs/jquery-ui-1.8.23.custom.min.js"></script>
+    <script src="{{ app.request.basepath }}/assets/js/libs/jquery.ui.datepicker-en-GB.js"></script>
+    <script src="{{ app.request.basepath }}/assets/js/libs/jquery.ui.datepicker-zh-CN.js"></script>
+
+    <!-- Plugins/Libraries -->
+    <script src="{{ app.request.basepath }}/assets/js/libs/jquery.ba-outside-events.min.js"></script>
+    <script src="{{ app.request.basepath }}/assets/js/libs/jquery.touchSwipe.min.js"></script>
+    <script src="{{ app.request.basepath }}/assets/js/libs/jquery.carouFredSel-6.0.5-packed.js"></script>
+    <!-- <script src="{{ app.request.basepath }}/assets/js/libs/galleria-1.2.8.min.js"></script> -->
+    <script src="{{ app.request.basepath }}/assets/js/libs/jquery.fancybox.js"></script>
+    <script src="{{ app.request.basepath }}/assets/js/libs/jquery.dropkick-1.0.0.js"></script>
+    <script src="{{ app.request.basepath }}/assets/js/plugins.js"></script>
+    <script src="{{ app.request.basepath }}/assets/js/script.js"></script>
+
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-35549879-1']);
+      _gaq.push(['_setDomainName', 'sohochina.com']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+
+    <script type="text/javascript">
+    var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa94cd29a280637e2ccf1f8f0ee2eb67e' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+
+</body>
+</html>

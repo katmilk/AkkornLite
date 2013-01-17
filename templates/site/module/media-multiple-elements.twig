@@ -1,0 +1,114 @@
+{% if module.layout is not defined  %}
+<div class="mod-inner">
+	{% if module.css_id == "main-hero" %}
+		{% if module.slides is defined %}
+		<div class="slideshow-content">
+			<div class="slideshow-container">
+				<ul class="slider">
+		    		{% set i = 1 %}
+					{% for slide in module.slides %}
+					<li class="slide">
+						<img src="{{ slide.img_large }}">
+						<div class="inner-shadow"></div>
+						<div class="inner-overlay"></div>
+						<div class="detail">
+							<div class="detail-inner">
+								<div class="caption">
+									<h3>{{ slide.title|raw }}</h3>
+									<p>{{ slide.caption|raw }}</p>
+									{% if slide.button is defined %}
+									<div class="btn-container">
+										{{ slide.button|raw }}
+									</div>
+									{% endif %}
+								</div>
+							</div>
+						</div>
+					</li>
+					{% set i = i + 1 %}	
+					{% endfor %}
+				</ul>
+				<div class="slider-nav">
+					<a class="slider-prev" href=""><span>Previous</span></a>
+					<a class="slider-next" href=""><span>Next</span></a>
+				</div>
+				<div class="slider-controls">
+					<div class="slider-pagin"></div>
+					<a class="slider-play" href="">Play</a>
+				</div>
+			</div>
+		</div>
+		{% endif %}
+	{% else %}
+		{% if module.slides is defined %}
+		<div class="slideshow-content">
+			<div class="slideshow-container">
+				<ul class="slider">
+		    		{% set i = 1 %}
+					{% for slide in module.slides %}
+					<li class="slide">
+						<img src="{{ slide.img_large }}">
+						<div class="inner-shadow"></div>
+						<div class="inner-overlay"></div>
+						<div class="detail">
+							<div class="detail-inner">
+								<div class="caption">
+									<p>{{ slide.caption|raw }}</p>
+								</div>
+							</div>
+						</div>
+					</li>
+					{% set i = i + 1 %}	
+					{% endfor %}
+				</ul>
+				<h2>{{ app.page.title }}</h2>
+				<div class="slider-nav">
+					<a class="slider-prev" href=""><span>Previous</span></a>
+					<a class="slider-next" href=""><span>Next</span></a>
+				</div>
+				<div class="slider-controls">
+					<div class="slider-pagin"></div>
+					<a class="slider-play" href="">Play</a>
+				</div>
+			</div>
+		</div>
+		{% endif %}
+	{% endif %}
+</div>
+{% endif %}
+
+
+{# Variant layout - slider view option where multiple items are visible instead of one (gallery view) #}
+{% if module.layout is defined and module.layout == "1" %}
+<div class="mod-inner">
+	{% if module.css_id == "main-hero" %}
+		{% if module.slides is defined %}
+		<div class="slideshow-content">
+			<div class="slideshow-container">
+				<div class="gallery">
+		    		{% set i = 1 %}
+					{% for slide in module.slides %}
+					<div class="slide"><a href="{{ slide.img_thumb }}"><img src="{{ slide.img_large }}" alt="{{ slide.title }}" data-title="{{ slide.title }}" data-description="{{ slide.caption }}" data-pagetitle="<h2>{{ app.page.title }}</h2>"></a></div>
+					{% set i = i + 1 %}	
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+		{% endif %}
+	{% else %}
+		{% if module.slides is defined %}
+		<div class="slideshow-content">
+			<div class="slideshow-container">
+				<div class="gallery">
+		    		{% set i = 1 %}
+					{% for slide in module.slides %}
+					<div class="slide"><a href="{{ slide.img_thumb }}"><img src="{{ slide.img_large }}" alt="{{ slide.title }}" data-title="{{ slide.title }}" data-description="{{ slide.caption }}" data-pagetitle="<h2>{{ app.page.title }}</h2>"></a></div>
+					{% set i = i + 1 %}	
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+		{% endif %}
+	{% endif %}
+</div>
+{% endif %}

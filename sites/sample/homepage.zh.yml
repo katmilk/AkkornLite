@@ -1,0 +1,676 @@
+page:
+    title: ""
+    description: ""
+    css_class: "home"
+    content:
+        1:
+            type: "m.m"
+            css_id: "main-hero"
+            slides:
+                1:
+                    img_large: "/assets/img/fpo/fpo_1800x496.jpg"
+                    title: "Headline <strong>Goes Here</strong>"
+                    caption: "Optional caption goes here"
+                    button: ""
+                2:
+                    img_large: "/assets/img/fpo/fpo_1800x496.jpg"
+                    title: "Headline <strong>Goes Here</strong>"
+                    caption: "Optional caption goes here"
+                    button: "<a class='btn' href='http://baidu.com/'>Sample Button</a>"
+                3:
+                    img_large: "/assets/img/fpo/fpo_1800x496.jpg"
+                    title: "Headline <strong>Goes Here</strong>"
+                    caption: "Optional caption goes here"
+                    button: ""
+        2:
+            type: "h.4"
+            class: "facts"
+            layout: "1"
+            columns:
+                1:
+                    title: "000,000 <span>Sq. M.</span>"
+                    text: "<p>Site Area</p>"
+                2:
+                    title: "000,000 <span>Sq. M</span>"
+                    text: "<p>Gross Floor Area</p>"
+                3:
+                    title: "000,000 <span>Sq. M</span>"
+                    text: "<p>Office Area</p>"
+                4:
+                    title: "000,000 <span>Sq. M</span>"
+                    text: "<p>Retail Area</p>"
+        3:
+            type: "t.d"
+        4:
+            type: "h.sl"
+            title: "Heading goes here"
+            subtitle: "Subtitle goes here"
+            text: "<p>Text copy goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tortor eros, pharetra eget rhoncus non, sollicitudin ac dolor. Etiam rhoncus, sem non rhoncus auctor, massa lectus malesuada justo, ac tempor dui turpis vitae enim. Mauris elementum, diam sit amet mattis vehicula, ligula ligula elementum ante, malesuada ultricies justo nibh vel metus. Ut mattis leo ut est congue at pulvinar justo feugiat.</p>"
+            img: "/assets/img/fpo/fpo_425x274.jpg"
+        5:
+            type: "t.d"
+        6:
+            type: "p.t3"
+            btns:
+                1:
+                    label: "Tab Name"
+                2:
+                    label: "Tab Name"
+                3:
+                    label: "Tab Name"
+
+            tabs:
+                1:
+                    columns:
+                        1:
+                            title: "Headline goes here"
+                            text: "<p>Text copy goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>"
+                            img: "/assets/img/fpo/fpo_270x200.jpg"
+                        2:
+                            title: "Headline goes here"
+                            text: "<p>Text copy goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>"
+                            img: "/assets/img/fpo/fpo_270x200.jpg"
+                        3:
+                            title: "Headline goes here"
+                            text: "<p>Text copy goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>"
+                            img: "/assets/img/fpo/fpo_270x200.jpg"
+                2:
+                    columns:
+                        1:
+                            title: "Headline goes here"
+                            text: "<p>Text copy goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>"
+                            img: "/assets/img/fpo/fpo_270x200.jpg"
+                        2:
+                            title: "Headline goes here"
+                            text: "<p>Text copy goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>"
+                            img: "/assets/img/fpo/fpo_270x200.jpg"
+                        3:
+                            title: "Headline goes here"
+                            text: "<p>Text copy goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>"
+                            img: "/assets/img/fpo/fpo_270x200.jpg"
+                3:
+                    columns:
+                        1:
+                            title: "Headline goes here"
+                            text: "<p>Text copy goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>"
+                            img: "/assets/img/fpo/fpo_270x200.jpg"
+                        2:
+                            title: "Headline goes here"
+                            text: "<p>Text copy goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>"
+                            img: "/assets/img/fpo/fpo_270x200.jpg"
+                        3:
+                            title: "Headline goes here"
+                            text: "<p>Text copy goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>"
+                            img: "/assets/img/fpo/fpo_270x200.jpg"
+        7:
+            type: "t.d"
+        8:
+            type: "h.sr"
+            layout: "1"
+            title: "Title goes here"
+            subtitle: "Subtitle goes here"
+            text: "<p>Text copy goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tortor eros, pharetra eget rhoncus non, sollicitudin ac dolor. Etiam rhoncus, sem non rhoncus auctor, massa lectus malesuada justo, ac tempor dui turpis vitae enim. Mauris elementum, diam sit amet mattis vehicula, ligula ligula elementum ante, malesuada ultricies justo nibh vel metus. Ut mattis leo ut est congue at pulvinar justo feugiat.</p>"
+            img: "/assets/img/fpo/fpo_425x274.jpg"
+        9:
+            type: "h.4"
+            class: "contact"
+            columns:
+                1:
+                    title: "Sales"
+                    text: "<p>555-5555</p><p><a href='mailto:sales@galaxysoho.com'>sales@galaxysoho.com</a></p>"
+                2:
+                    title: "Leasing"
+                    text: "<p>555-5555</p><p><a href='mailto:leasing@galaxysoho.com'>leasing@galaxysoho.com</a></p>"
+                3:
+                    title: "Management"
+                    text: "<p>555-5555</p><p><a href='mailto:galaxy@jingrong.com'>galaxy@jingrong.com</a></p>"
+                4:
+                    text: "<p><strong>11F, Building A,</strong></p><p>Chaoyangmen SOHO</p><p>East 2nd Ring Road</p><p>Beijing 100020, China</p>"
+        10:
+            type: "h.2"
+            layout: "1"
+            columns:
+                1:
+                    title: "This is a title"
+                    subtitle: "This is a subtitle"
+                    img: "/assets/img/fpo/fpo_425x274.jpg"
+                    text: "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>"
+                2:
+                    title: "This is a title"
+                    subtitle: "This is a subtitle"
+                    img: "/assets/img/fpo/fpo_425x274.jpg"
+                    text: "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>"
+        11:
+            type: "h.2s"
+            columns:
+                1:
+                    img: "/assets/img/fpo/fpo_425x274.jpg"
+                    title: "Hey this is the title"
+                    text: "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>"
+                2:
+                    img: "/assets/img/fpo/fpo_425x274.jpg"
+                    title: "Hey this is the title"
+                    text: "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>"
+        12:
+            type: "t.t"
+            title: "Hey this is a title module"
+        13:
+            type: "t.s"
+            subtitle: "Hey this is a title module"
+        14:
+            type: "t.q"
+            text: "<p>Text copy goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tortor eros, pharetra eget rhoncus non, sollicitudin ac dolor. Etiam rhoncus, sem non rhoncus auctor, massa lectus malesuada justo, ac tempor dui turpis vitae enim. Mauris elementum, diam sit amet mattis vehicula, ligula ligula elementum ante, malesuada ultricies justo nibh vel metus. Ut mattis leo ut est congue at pulvinar justo feugiat.</p>"
+            source: "Person Name Here"
+        15:
+            type: "h.3"
+            columns:
+                1:
+                    title: "This is a title"
+                    subtitle: "This is a subtitle"
+                    img: "/assets/img/fpo/fpo_425x274.jpg"
+                    text: "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>"
+                2:
+                    title: "This is a title"
+                    subtitle: "This is a subtitle"
+                    img: "/assets/img/fpo/fpo_425x274.jpg"
+                    text: "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>"
+                3:
+                    title: "This is a title"
+                    subtitle: "This is a subtitle"
+                    img: "/assets/img/fpo/fpo_425x274.jpg"
+                    text: "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>"
+        16:
+            type: "h.4"
+            columns:
+                1:
+                    title: "This is a title"
+                    subtitle: "This is a subtitle"
+                    img: "/assets/img/fpo/fpo_425x274.jpg"
+                    text: "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>"
+                2:
+                    title: "This is a title"
+                    subtitle: "This is a subtitle"
+                    img: "/assets/img/fpo/fpo_425x274.jpg"
+                    text: "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>"
+                3:
+                    title: "This is a title"
+                    subtitle: "This is a subtitle"
+                    img: "/assets/img/fpo/fpo_425x274.jpg"
+                    text: "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>"
+                4:
+                    title: "This is a title"
+                    subtitle: "This is a subtitle"
+                    img: "/assets/img/fpo/fpo_425x274.jpg"
+                    text: "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>"
+        17:
+            type: "h.3l"
+            columns:
+                1:
+                    title: "This is a title"
+                    subtitle: "This is a subtitle"
+                    img: "/assets/img/fpo/fpo_425x274.jpg"
+                    text: "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>"
+                2:
+                    title: "This is a title"
+                    subtitle: "This is a subtitle"
+                    img: "/assets/img/fpo/fpo_425x274.jpg"
+                    text: "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>"
+                3:
+                    title: "This is a title"
+                    subtitle: "This is a subtitle"
+                    img: "/assets/img/fpo/fpo_425x274.jpg"
+                    text: "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>"
+        18:
+            type: "h.3r"
+            columns:
+                1:
+                    title: "This is a title"
+                    subtitle: "This is a subtitle"
+                    img: "/assets/img/fpo/fpo_425x274.jpg"
+                    text: "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>"
+                2:
+                    title: "This is a title"
+                    subtitle: "This is a subtitle"
+                    img: "/assets/img/fpo/fpo_425x274.jpg"
+                    text: "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>"
+                3:
+                    title: "This is a title"
+                    subtitle: "This is a subtitle"
+                    img: "/assets/img/fpo/fpo_425x274.jpg"
+                    text: "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>"
+        19:
+            type: "m.g"
+            title: "Hey this is a title"
+            filterName: "Filters"
+            class: "bottom-offset"
+            filters:
+                1:
+                    title: "filter 1"
+                2:
+                    title: "filter 2"
+                3:
+                    title: "filter 3"
+                4:
+                    title: "filter 4"
+            images:
+                1:
+                    title: "Item Title"
+                    caption: "This piece of text right here is a caption for the Fancies of boxes."
+                    img:
+                        thumb: "/assets/img/fpo/fpo_120x70.jpg"
+                        full: "/assets/img/fpo/fpo_600x480.jpg"
+                    filter: "filter 1"
+                2:
+                    title: "Item Title"
+                    img:
+                        thumb: "/assets/img/fpo/fpo_120x70.jpg"
+                        full: "/assets/img/fpo/fpo_600x480.jpg"
+                    filter: "filter 2"
+                3:
+                    title: "Item Title"
+                    img:
+                        thumb: "/assets/img/fpo/fpo_120x70.jpg"
+                        full: "/assets/img/fpo/fpo_600x480.jpg"
+                    filter: "filter 3"
+                4:
+                    title: "Item Title"
+                    img:
+                        thumb: "/assets/img/fpo/fpo_120x70.jpg"
+                        full: "/assets/img/fpo/fpo_600x480.jpg"
+                    filter: "filter 4"
+                5:
+                    title: "Item Title"
+                    img:
+                        thumb: "/assets/img/fpo/fpo_120x70.jpg"
+                        full: "/assets/img/fpo/fpo_600x480.jpg"
+                    filter: "filter 1"
+                6:
+                    title: "Item Title"
+                    img:
+                        thumb: "/assets/img/fpo/fpo_120x70.jpg"
+                        full: "/assets/img/fpo/fpo_600x480.jpg"
+                    filter: "filter 2"
+                7:
+                    title: "Item Title"
+                    img:
+                        thumb: "/assets/img/fpo/fpo_120x70.jpg"
+                        full: "/assets/img/fpo/fpo_600x480.jpg"
+                    filter: "filter 3"
+                8:
+                    title: "Item Title"
+                    img:
+                        thumb: "/assets/img/fpo/fpo_120x70.jpg"
+                        full: "/assets/img/fpo/fpo_600x480.jpg"
+                    filter: "filter 4"
+                9:
+                    title: "Item Title"
+                    img:
+                        thumb: "/assets/img/fpo/fpo_120x70.jpg"
+                        full: "/assets/img/fpo/fpo_600x480.jpg"
+                    filter: "filter 1"
+                10:
+                    title: "Item Title"
+                    img:
+                        thumb: "/assets/img/fpo/fpo_120x70.jpg"
+                        full: "/assets/img/fpo/fpo_600x480.jpg"
+                    filter: "filter 2"
+                11:
+                    title: "Item Title"
+                    img:
+                        thumb: "/assets/img/fpo/fpo_120x70.jpg"
+                        full: "/assets/img/fpo/fpo_600x480.jpg"
+                    filter: "filter 1"
+                12:
+                    title: "Item Title"
+                    img:
+                        thumb: "/assets/img/fpo/fpo_120x70.jpg"
+                        full: "/assets/img/fpo/fpo_600x480.jpg"
+                    filter: "filter 2"
+                13:
+                    title: "Item Title"
+                    img:
+                        thumb: "/assets/img/fpo/fpo_120x70.jpg"
+                        full: "/assets/img/fpo/fpo_600x480.jpg"
+                    filter: "filter 1"
+                14:
+                    title: "Item Title"
+                    img:
+                        thumb: "/assets/img/fpo/fpo_120x70.jpg"
+                        full: "/assets/img/fpo/fpo_600x480.jpg"
+                    filter: "filter 2"
+                15:
+                    title: "Item Title"
+                    img:
+                        thumb: "/assets/img/fpo/fpo_120x70.jpg"
+                        full: "/assets/img/fpo/fpo_600x480.jpg"
+                    filter: "filter 3"
+                16:
+                    title: "Item Title"
+                    img:
+                        thumb: "/assets/img/fpo/fpo_120x70.jpg"
+                        full: "/assets/img/fpo/fpo_600x480.jpg"
+                    filter: "filter 4"
+                17:
+                    title: "Item Title"
+                    img:
+                        thumb: "/assets/img/fpo/fpo_120x70.jpg"
+                        full: "/assets/img/fpo/fpo_600x480.jpg"
+                    filter: "filter 1"
+                18:
+                    title: "Item Title"
+                    img:
+                        thumb: "/assets/img/fpo/fpo_120x70.jpg"
+                        full: "/assets/img/fpo/fpo_600x480.jpg"
+                    filter: "filter 2"
+                19:
+                    title: "Item Title"
+                    img:
+                        thumb: "/assets/img/fpo/fpo_120x70.jpg"
+                        full: "/assets/img/fpo/fpo_600x480.jpg"
+                    filter: "filter 3"
+                20:
+                    title: "Item Title"
+                    img:
+                        thumb: "/assets/img/fpo/fpo_120x70.jpg"
+                        full: "/assets/img/fpo/fpo_600x480.jpg"
+                    filter: "filter 4"
+                21:
+                    title: "Item Title"
+                    img:
+                        thumb: "/assets/img/fpo/fpo_120x70.jpg"
+                        full: "/assets/img/fpo/fpo_600x480.jpg"
+                    filter: "filter 1"
+                22:
+                    title: "Item Title"
+                    img:
+                        thumb: "/assets/img/fpo/fpo_120x70.jpg"
+                        full: "/assets/img/fpo/fpo_600x480.jpg"
+                    filter: "filter 2"
+                23:
+                    title: "Item Title"
+                    img:
+                        thumb: "/assets/img/fpo/fpo_120x70.jpg"
+                        full: "/assets/img/fpo/fpo_600x480.jpg"
+                    filter: "filter 1"
+                24:
+                    title: "Item Title"
+                    img:
+                        thumb: "/assets/img/fpo/fpo_120x70.jpg"
+                        full: "/assets/img/fpo/fpo_600x480.jpg"
+                    filter: "filter 2"
+        20:
+            type: "p.tm"
+            btns:
+                1:
+                    label: "Tab Name"
+                2:
+                    label: "Tab Name"
+                3:
+                    label: "Tab Name"
+
+            tabs:
+                1:
+                    text: "<p>Lorem ipsum dolor sit amet, consectetur m dolor sit amet, consectetur adipiscing elit. Fusce ultricies convallis felis,</p>"
+                    img: "/assets/img/fpo/fpo_880x495.jpg"
+                2:
+                    text: "<p>Lorem ipsum dolor sit amet, consectetur m dolor sit amet, consectetur adipiscing elit. Fusce ultricies convallis felis,</p>"
+                    img: "/assets/img/fpo/fpo_880x495.jpg"
+                3:
+                    text: "<p>Lorem ipsum dolor sit amet, consectetur m dolor sit amet, consectetur adipiscing elit. Fusce ultricies convallis felis,</p>"
+                    img: "/assets/img/fpo/fpo_880x495.jpg"
+        21:
+            type: "t.d"
+        22:
+            type: "m.s"
+            text: "<p>Here is some text</p>"
+            img: "/assets/img/fpo/fpo_880x495.jpg"
+        23:
+            type: "p.2"
+            btns:
+                1:
+                    title: "Tab Name"
+                2:
+                    title: "Tab Name"
+                3:
+                    title: "Tab Name"
+
+            tabs:
+                1:
+                    columns:
+                        1:
+                            title: "Headline goes here"
+                            text: "<p>Text copy goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tortor eros, pharetra eget rhoncus non, sollicitudin ac dolor. Sem non massa lectus malesuada justo, ac tempor dui turpis vitae enim.</p>"
+                            img: "/assets/img/fpo/fpo_270x200.jpg"
+                        2:
+                            title: "Headline goes here"
+                            text: "<p>Text copy goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tortor eros, pharetra eget rhoncus non, sollicitudin ac dolor. Sem non massa lectus malesuada justo, ac tempor dui turpis vitae enim.</p>"
+                            img: "/assets/img/fpo/fpo_270x200.jpg"
+                2:
+                    columns:
+                        1:
+                            title: "Headline goes here"
+                            text: "<p>Text copy goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tortor eros, pharetra eget rhoncus non, sollicitudin ac dolor. Sem non massa lectus malesuada justo, ac tempor dui turpis vitae enim.</p>"
+                            img: "/assets/img/fpo/fpo_270x200.jpg"
+                        2:
+                            title: "Headline goes here"
+                            text: "<p>Text copy goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tortor eros, pharetra eget rhoncus non, sollicitudin ac dolor. Sem non massa lectus malesuada justo, ac tempor dui turpis vitae enim.</p>"
+                            img: "/assets/img/fpo/fpo_270x200.jpg"
+                3:
+                    columns:
+                        1:
+                            title: "Headline goes here"
+                            text: "<p>Text copy goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tortor eros, pharetra eget rhoncus non, sollicitudin ac dolor. Sem non massa lectus malesuada justo, ac tempor dui turpis vitae enim.</p>"
+                            img: "/assets/img/fpo/fpo_270x200.jpg"
+                        2:
+                            title: "Headline goes here"
+                            text: "<p>Text copy goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tortor eros, pharetra eget rhoncus non, sollicitudin ac dolor. Sem non massa lectus malesuada justo, ac tempor dui turpis vitae enim.</p>"
+                            img: "/assets/img/fpo/fpo_270x200.jpg"
+        24:
+            type: "p.m"
+            btns:
+                1:
+                    title: "Tab Name"
+                2:
+                    title: "Tab Name"
+                3:
+                    title: "Tab Name"
+                4:
+                    title: "Tab Name"
+                5:
+                    title: "Tab Name"
+            tabs:
+                1:
+                    title: "Title goes here"
+                    text: "<ul><li>Text copy goes here.</li><li>Text copy goes here.</li><li>Text copy goes here.</li><li>Text copy goes here.</li><li>Text copy goes here.</li>"
+                    description: "Description goes here. Text copy goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                    button: "Button title"
+                    url: "http://baidu.com/"
+                    slides:
+                        1:
+                            img: "/assets/img/fpo/fpo_580x324.jpg"
+                        2:
+                            img: "/assets/img/fpo/fpo_580x324.jpg"
+                        3:
+                            img: "/assets/img/fpo/fpo_580x324.jpg"
+                2:
+                    title: "Title goes here"
+                    text: "<ul><li>Text copy goes here.</li><li>Text copy goes here.</li><li>Text copy goes here.</li><li>Text copy goes here.</li><li>Text copy goes here.</li>"
+                    description: "Description goes here. Text copy goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                    button: "Button title"
+                    url: "http://baidu.com/"
+                    slides:
+
+                        1:
+                            img: "/assets/img/fpo/fpo_580x324.jpg"
+                        2:
+                            img: "/assets/img/fpo/fpo_580x324.jpg"
+                3:
+                    title: "Title goes here"
+                    text: "<ul><li>Text copy goes here.</li><li>Text copy goes here.</li><li>Text copy goes here.</li><li>Text copy goes here.</li><li>Text copy goes here.</li>"
+                    description: "Description goes here. Text copy goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                    button: "Button title"
+                    url: "http://baidu.com/"
+                    slides:
+                        1:
+                            img: "/assets/img/fpo/fpo_580x324.jpg"
+                        2:
+                            img: "/assets/img/fpo/fpo_580x324.jpg"
+                        3:
+                            img: "/assets/img/fpo/fpo_580x324.jpg"
+                        4:
+                            img: "/assets/img/fpo/fpo_580x324.jpg"
+                4:
+                    title: "Title goes here"
+                    text: "<ul><li>Text copy goes here.</li><li>Text copy goes here.</li><li>Text copy goes here.</li><li>Text copy goes here.</li><li>Text copy goes here.</li>"
+                    description: "Description goes here. Text copy goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                    button: "Button title"
+                    url: "http://baidu.com/"
+                    slides:
+                        1:
+                            img: "/assets/img/fpo/fpo_580x324.jpg"
+                        2:
+                            img: "/assets/img/fpo/fpo_580x324.jpg"
+                5:
+                    title: "Title goes here"
+                    text: "<ul><li>Text copy goes here.</li><li>Text copy goes here.</li><li>Text copy goes here.</li><li>Text copy goes here.</li><li>Text copy goes here.</li>"
+                    description: "Description goes here. Text copy goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                    button: "Button title"
+                    url: "http://baidu.com/"
+                    slides:
+                        1:
+                            img: "/assets/img/fpo/fpo_580x324.jpg"
+        25:
+            type: "p.tl"
+            btns:
+                1:
+                    label: "Tab Name"
+                2:
+                    label: "Tab Name"
+                3:
+                    label: "Tab Name"
+            tabs:
+                1:
+                    title: "Title goes here"
+                    subtitle: "Subtitle goes here"
+                    text: "<p>Lorem ipsum dolor sit amet, consectetur m dolor sit amet, consectetur adipiscing elit. Fusce ultricies convallis felis,</p>"
+                    img: "/assets/img/fpo/fpo_580x324.jpg"
+                2:
+                    title: "Title goes here"
+                    subtitle: "Subtitle goes here"
+                    text: "<p>Lorem ipsum dolor sit amet, consectetur m dolor sit amet, consectetur adipiscing elit. Fusce ultricies convallis felis,</p>"
+                    img: "/assets/img/fpo/fpo_580x324.jpg"
+                3:
+                    title: "Title goes here"
+                    subtitle: "Subtitle goes here"
+                    text: "<p>Lorem ipsum dolor sit amet, consectetur m dolor sit amet, consectetur adipiscing elit. Fusce ultricies convallis felis,</p>"
+                    img: "/assets/img/fpo/fpo_580x324.jpg"
+        26:
+            type: "t.d"
+        27:
+            type: "t.b"
+            title: "Title goes here"
+            subtitle: "Optional subtitle goes here"
+            text: "<p>Text copy goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tortor eros, pharetra eget rhoncus non, sollicitudin ac dolor. Sem non massa lectus malesuada justo, ac tempor dui turpis vitae enim.</p>"
+        28:
+            type: "t.d"
+        29:
+            type: "t.b"
+            layout: "1"
+            title: "Title goes here"
+            subtitle: "Optional subtitle goes here"
+            text: "<p>Text copy goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tortor eros, pharetra eget rhoncus non, sollicitudin ac dolor. Sem non massa lectus malesuada justo, ac tempor dui turpis vitae enim.</p>"
+        30:
+            type: "t.d"
+        31:
+            type: "p.tr"
+            class: "bottom-offset"
+            btns:
+                1:
+                    label: "Tab Name"
+                2:
+                    label: "Tab Name"
+                3:
+                    label: "Tab Name"
+            tabs:
+                1:
+                    title: "Title goes here"
+                    subtitle: "Subtitle goes here"
+                    text: "<p>Lorem ipsum dolor sit amet, consectetur m dolor sit amet, consectetur adipiscing elit. Fusce ultricies convallis felis,</p>"
+                    img: "/assets/img/fpo/fpo_580x324.jpg"
+                2:
+                    title: "Title goes here"
+                    subtitle: "Subtitle goes here"
+                    text: "<p>Lorem ipsum dolor sit amet, consectetur m dolor sit amet, consectetur adipiscing elit. Fusce ultricies convallis felis,</p>"
+                    img: "/assets/img/fpo/fpo_580x324.jpg"
+                3:
+                    title: "Title goes here"
+                    subtitle: "Subtitle goes here"
+                    text: "<p>Lorem ipsum dolor sit amet, consectetur m dolor sit amet, consectetur adipiscing elit. Fusce ultricies convallis felis,</p>"
+                    img: "/assets/img/fpo/fpo_580x324.jpg"
+        32:
+            type: "p.4"
+            tabs:
+                1:
+                    columns:
+                        1:
+                            title: "Headline goes here"
+                            text: "<p>Text copy goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ultricies convallis felis.</p>"
+                            img: "/assets/img/fpo/fpo_270x200.jpg"
+                        2:
+                            title: "Headline goes here"
+                            text: "<p>Text copy goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ultricies convallis felis.</p>"
+                            img: "/assets/img/fpo/fpo_270x200.jpg"
+                        3:
+                            title: "Headline goes here"
+                            text: "<p>Text copy goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ultricies convallis felis.</p>"
+                            img: "/assets/img/fpo/fpo_270x200.jpg"
+                        4:
+                            title: "Headline goes here"
+                            text: "<p>Text copy goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ultricies convallis felis.</p>"
+                            img: "/assets/img/fpo/fpo_270x200.jpg"
+                2:
+                    columns:
+                        1:
+                            title: "Headline goes here"
+                            text: "<p>Text copy goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ultricies convallis felis.</p>"
+                            img: "/assets/img/fpo/fpo_270x200.jpg"
+                        2:
+                            title: "Headline goes here"
+                            text: "<p>Text copy goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ultricies convallis felis.</p>"
+                            img: "/assets/img/fpo/fpo_270x200.jpg"
+                        3:
+                            title: "Headline goes here"
+                            text: "<p>Text copy goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ultricies convallis felis.</p>"
+                            img: "/assets/img/fpo/fpo_270x200.jpg"
+                        4:
+                            title: "Headline goes here"
+                            text: "<p>Text copy goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ultricies convallis felis.</p>"
+                            img: "/assets/img/fpo/fpo_270x200.jpg"
+                3:
+                    columns:
+                        1:
+                            title: "Headline goes here"
+                            text: "<p>Text copy goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ultricies convallis felis.</p>"
+                            img: "/assets/img/fpo/fpo_270x200.jpg"
+                        2:
+                            title: "Headline goes here"
+                            text: "<p>Text copy goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ultricies convallis felis.</p>"
+                            img: "/assets/img/fpo/fpo_270x200.jpg"
+                        3:
+                            title: "Headline goes here"
+                            text: "<p>Text copy goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ultricies convallis felis.</p>"
+                            img: "/assets/img/fpo/fpo_270x200.jpg"
+                        4:
+                            title: "Headline goes here"
+                            text: "<p>Text copy goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ultricies convallis felis.</p>"
+                            img: "/assets/img/fpo/fpo_270x200.jpg"
+        33:
+            type: "h.2"
+            class: "contact"
+            columns:
+                1:
+                    title: "Sales &amp; Leasing"
+                    text: "<p>000-000-0000</p>"
+                2:
+                    text: "<p><strong>SOHO China</strong></p><p>Address Line 1</p><p>Beijing, China</p>"
+

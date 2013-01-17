@@ -1,0 +1,74 @@
+{% if module.layout is not defined  %}
+{% set i = 1 %}
+<div class="mod-inner clearfix">
+	{% for column in module.columns %}
+		{% if i == 1 %}
+			<div class="inner-content col-4 first">
+		{% endif %}
+		{% if i == module.columns|length %}
+			<div class="inner-content col-4 last">
+		{% endif %}
+		{% if i == 3 %}
+			<div class="inner-content col-4 third">
+		{% endif %}
+		{% if i != module.columns|length and i != 1 and i != 3 %}
+			<div class="inner-content col-4">
+		{% endif %}
+			{% if column.img is defined %}
+				<div class="img-container">
+					<img src="{{column.img}}">
+				</div>
+			{% endif %}
+			<div class="copy-container">
+				{% if column.title is defined %}
+					<h2>{{column.title|raw}}</h2>
+				{% endif %}
+				{% if column.subtitle is defined %}
+					<h3>{{column.subtitle}}</h3>
+				{% endif %}
+				{% if column.text is defined %}
+					{{column.text|raw}}
+				{% endif %}
+			</div>
+		</div>
+	{% set i = i + 1 %}
+	{% endfor %}
+</div>
+{% endif %}
+
+{# Variant layout where the caption is above the title #}
+{% if module.layout is defined and module.layout == "1" %}
+<div class="mod-inner clearfix">
+	{% set i = 1 %}
+	{% for column in module.columns %}
+		{% if i == 1  %}
+			<div class="inner-content col-4 first">
+		{% endif %}
+		{% if i == module.columns|length %}
+			<div class="inner-content col-4 last">
+		{% endif %}
+		{% if i != module.columns|length and i != 1 %}
+			<div class="inner-content col-4">
+		{% endif %}
+			{% if column.img is defined %}
+				<div class="img-container">
+					<img src="{{column.img}}">
+				</div>
+			{% endif %}
+			<div class="copy-container">
+				{% if column.text is defined %}
+					{{column.text|raw}}
+				{% endif %}
+				{% if column.title is defined %}
+					<h2>{{column.title|raw}}</h2>
+				{% endif %}
+				{% if column.subtitle is defined %}
+					<h3>{{column.subtitle}}</h3>
+				{% endif %}
+			</div>
+		</div>
+	{% set i = i + 1 %}
+	{% endfor %}
+</div>
+
+{% endif %}

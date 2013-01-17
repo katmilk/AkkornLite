@@ -1,0 +1,261 @@
+{% if module.layout is not defined %}
+<div class="mod-inner">
+	{% if app.locale == 'en' %}
+	<form method='post' action="/en/commune-registration">
+		<input type="text" id="from" name="from" tabindex="1" placeholder="Check-in Date"/>
+		<input type="text" id="to" name="to" tabindex="2" placeholder="Check-out Date"/>
+		<select name="rooms" tabindex="3" class="custom-select">
+			<option value="">Rooms</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+		</select>
+		<select name="adults" tabindex="4" class="custom-select">
+			<option value="">Adults</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+		</select>
+		<select name="children" tabindex="5" class="custom-select">
+			<option value="">Children</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+		</select>
+		<input type="submit" tabindex="6" value="Check Availability">
+	</form>
+	{% else %}
+	<form method='post' action="/zh/commune-registration">
+		<input type="text" id="from" name="from" tabindex="1" placeholder="入住日期"/>
+		<input type="text" id="to" name="to" tabindex="2" placeholder="退房日期"/>
+		<select name="rooms" tabindex="3" class="custom-select">
+			<option value="">房间数量</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+		</select>
+		<select name="adults" tabindex="4" class="custom-select">
+			<option value="">成人</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+		</select>
+		<select name="children" tabindex="5" class="custom-select">
+			<option value="">儿童</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+		</select>
+		<input type="submit" tabindex="6" value="查看空房情况">
+	</form>
+	{% endif %}
+</div>
+{% endif %}
+
+{% if module.layout is defined and module.layout == 1 %}
+	{% if app.locale == 'en' %}
+	<form method='post' action="/en/commune-registration">
+		<fieldset class="clearfix">
+			<div class="mod-inner">
+				<legend>Reservation Details</legend>
+				<div class="text-divider"></div>
+				<input type="text" id="from" name="from" tabindex="1" value="Check-in Date"/>
+				<input type="text" id="to" name="to" tabindex="2" value="Check-out Date"/>
+				<select name="rooms" tabindex="3" class="custom-select">
+					<option value="">Rooms</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+				</select>
+				<select name="occupancy" tabindex="4" class="custom-select">
+					<option value="">Guests per Room</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+				</select>
+				<select name="type" tabindex="5" class="custom-select">
+					<option value="">Room Type</option>
+					<option value="Deluxe Suite">Deluxe Suite</option>
+					<option value="Deluxe Room">Deluxe Room</option>
+					<option value="Superior Room">Superior Room</option>
+					<option value="Standard Room">Standard Room</option>
+					<option value="Great Wall View Room">Great Wall View</option>
+				</select>
+			</div>
+		</fieldset>
+
+		<fieldset class="clearfix">
+			<div class="mod-inner">
+				<legend>Personal Information</legend>
+				<div class="text-divider"></div>
+
+				<div class="col-left">
+					<label><span>Prefix</span>
+						<select name="prefix" tabindex="6" class="custom-select">
+							<option value="Mr.">Mr.</option>
+							<option value="Ms.">Ms.</option>
+						</select>
+					</label>
+
+					<label><span>First Name</span>
+						<input type="text" tabindex="7" name="firstname">
+					</label>
+
+					<label><span>Last Name</span>
+						<input type="text" tabindex="8" name="lastname">
+					</label>
+
+					<label><span>Address</span>
+						<input type="text" tabindex="9" name="address">
+					</label>
+
+					<label><span>City</span>
+						<input type="text" tabindex="10" name="city">
+					</label>
+
+					<label><span>Province</span>
+						<input type="text" tabindex="11" name="province">
+					</label>
+				</div>
+
+				<div class="col-right">
+
+					<label><span>Zip Code</span>
+						<input class="zip" type="text" tabindex="12" name="zip">
+					</label>
+
+					<label><span>Country</span>
+						<input type="text" tabindex="13" name="country">
+					</label>
+
+					<label><span>Phone</span>
+						<input type="text" tabindex="14" name="phone">
+					</label>
+
+					<label><span>Email</span>
+						<input type="text" tabindex="15" name="email">
+					</label>
+
+					<label><span>Requirement Details</span>
+						<textarea tabindex="16" name="description"></textarea>
+					</label>
+				</div>
+
+			</div>
+		</fieldset>
+		<div class="mod-inner">
+			<div class="submit-container">
+				<input type="reset" tabindex="21" value="Reset">
+				<input type="submit" tabindex="22" value="Submit">
+			</div>
+		</div>
+	</form>
+	{% else %}
+	<form method='post' action="/zh/commune-registration">
+		<fieldset class="clearfix">
+			<div class="mod-inner">
+				<legend>预订详情</legend>
+				<div class="text-divider"></div>
+				<input type="text" id="from" name="from" tabindex="1" value="入住时间"/>
+				<input type="text" id="to" name="to" tabindex="2" value="退房时间"/>
+				<select name="rooms" tabindex="3" class="custom-select">
+					<option value="">需要几间房</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+				</select>
+				<select name="occupancy" tabindex="4" class="custom-select">
+					<option value="">每房间入住人数</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+				</select>
+				<select name="type" tabindex="5" class="custom-select">
+					<option value="">房间类型</option>
+					<option value="豪华套间">豪华套间</option>
+					<option value="豪华间">豪华间</option>
+					<option value="高级间">高级间</option>
+					<option value="标准间">标准间</option>
+					<option value="长城景观房">长城景观房</option>
+				</select>
+			</div>
+		</fieldset>
+
+		<fieldset class="clearfix">
+			<div class="mod-inner">
+				<legend>个人信息</legend>
+				<div class="text-divider"></div>
+
+				<div class="col-left">
+					<label><span>性别</span>
+						<select name="prefix" tabindex="6" class="custom-select">
+							<option value="先生">先生</option>
+							<option value="女士">女士</option>
+						</select>
+					</label>
+
+					<label><span>名</span>
+						<input type="text" tabindex="7" name="firstname">
+					</label>
+
+					<label><span>姓</span>
+						<input type="text" tabindex="8" name="lastname">
+					</label>
+
+					<label><span>联系地址</span>
+						<input type="text" tabindex="9" name="address">
+					</label>
+
+					<label><span>市</span>
+						<input type="text" tabindex="10" name="city">
+					</label>
+
+					<label><span>省</span>
+						<input type="text" tabindex="11" name="province">
+					</label>
+				</div>
+
+				<div class="col-right">
+
+					<label><span>邮编</span>
+						<input class="zip" type="text" tabindex="12" name="zip">
+					</label>
+
+					<label><span>国家</span>
+						<input type="text" tabindex="13" name="country">
+					</label>
+
+					<label><span>联系电话</span>
+						<input type="text" tabindex="14" name="phone">
+					</label>
+
+					<label><span>Email</span>
+						<input type="text" tabindex="15" name="email">
+					</label>
+
+					<label><span>需求描述</span>
+						<textarea tabindex="16" name="description"></textarea>
+					</label>
+				</div>
+
+			</div>
+		</fieldset>
+		<div class="mod-inner">
+			<div class="submit-container">
+				<input type="reset" tabindex="21" value="重置">
+				<input type="submit" tabindex="22" value="提交">
+			</div>
+		</div>
+	</form>
+	{% endif %}
+{% endif %}

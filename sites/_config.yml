@@ -1,0 +1,9 @@
+site:
+    title: "Sample Site"
+    structure:
+        sales: "Sales & Leasing"
+    external:
+        sales: "http://www.google.com"
+    css:
+        1: "css/theme-sample.css"
+    logo: ""
